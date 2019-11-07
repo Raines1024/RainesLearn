@@ -1,4 +1,11 @@
 #创建分支
+easy:
+
+    git checkout -b my-test  //在当前分支下创建my-test的本地分支分支
+    git push origin my-test  //将my-test分支推送到远程
+    git branch --set-upstream-to=origin/my-test //将本地分支my-test关联到远程分支my-test上   
+    git branch -a //查看远程分支
+
 0.可以通过git branch -r 命令查看远端库的分支情况
 
 1.从已有的分支创建新的分支(如从master分支),创建一个dev分支
@@ -74,6 +81,13 @@ git commit -m "解决2个分支之间的冲突"
 <em style="color:#c7254e">git push origin v1.2</em>
 
 ###搞定
+
+<hr>
+
+#Git回退版本
+
+    git reset --hard 版本id
+    git push -f提交会把回退版本之后的记录删除
 
 <hr>
 
