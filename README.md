@@ -14,5 +14,4 @@
 ### 随想
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/assholeList.md">混蛋特点清单</a>
 
-###技术有误希望指正,thanks.
-###随想有误欢迎指正，反正我也不改，你别憋着。
+>Email: 1150079039@qq.com
