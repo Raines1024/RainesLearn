@@ -14,4 +14,6 @@
 ### 随想
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/assholeList.md">混蛋特点清单</a>
 
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/gaoxiaosong.md">高晓松：在北欧，我觉得自己内心很丑陋</a>
+
 >Email: 1150079039@qq.com
