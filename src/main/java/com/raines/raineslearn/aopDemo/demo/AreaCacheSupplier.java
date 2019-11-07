@@ -1,17 +1,10 @@
 package com.raines.raineslearn.aopDemo.demo;
 
 import com.raines.raineslearn.aopDemo.AbstractCacheSupplier;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
-import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * 行政区域缓存提供类
- * @author zhangrb
  *
  */
 @Component

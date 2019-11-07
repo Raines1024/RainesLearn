@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * app启动后，系统初始化
- * @author zhangrb
  *
  */
 @Component

@@ -2,7 +2,6 @@ package com.raines.raineslearn.aopDemo;
 
 /**
  * 缓存提供器，各模块的缓存需要实现此接口
- * @author zhangrb
  *
  */
 public interface CacheSupplier {

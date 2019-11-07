@@ -1,8 +1,5 @@
 package com.raines.raineslearn.aopDemo.annotation;
 
-/**
- * Created by Administrator on 2018/3/12.
- */
 
 import java.lang.annotation.*;
 

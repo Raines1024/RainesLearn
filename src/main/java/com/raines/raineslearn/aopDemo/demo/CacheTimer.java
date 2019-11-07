@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 
 /**
- * @author zhangrb
  * 缓存更新定时器
  */
 @Component
