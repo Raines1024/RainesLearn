@@ -1,4 +1,4 @@
-package com.raines.raineslearn.CreateThreadDemo;
+package com.raines.raineslearn.createThreadDemo;
 
 import java.util.Timer;
 import java.util.TimerTask;

@@ -1,4 +1,4 @@
 # RainesBlog
-## 一个人的跋涉
+## 一个基本懂得幼稚园道理的小学生
 ### JAVA
-CreateThreadDemo:添加线程的方式
+CreateThreadDemo:创建线程的几种方式

@@ -1,4 +1,4 @@
-package com.raines.raineslearn.CreateThreadDemo;
+package com.raines.raineslearn.createThreadDemo;
 
 /**
  * 匿名内部类创建线程对象

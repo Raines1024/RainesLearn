@@ -1,4 +1,4 @@
-package com.raines.raineslearn.CreateThreadDemo;
+package com.raines.raineslearn.createThreadDemo;
 
 /**
  * 继承Thread类，作为线程对象存在（继承Thread对象）

@@ -1,4 +1,4 @@
-package com.raines.raineslearn.CreateThreadDemo;
+package com.raines.raineslearn.createThreadDemo;
 
 /**
  * 实现runnable接口，作为线程任务存在
