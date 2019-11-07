@@ -3,6 +3,9 @@
 ### 编程
 #### Java
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/javaIntroduce.md">包介绍</a>
+
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/javaUsuallyMethod.md">java常用方法</a>
+
 #### Git
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/git/gitBranch.md">Git分支</a>
 ### 随想
