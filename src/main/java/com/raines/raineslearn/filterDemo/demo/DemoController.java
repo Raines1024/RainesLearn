@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/demo")
-public class TbAssessController {
+public class DemoController {
 
 
     @GetMapping("/create")
