@@ -12,6 +12,8 @@
 >pdf包资料由xmind转大纲后转为pdf格式
 
 ### 随想
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/growUp.md">我把它叫做感悟(Leave, or shut up your fucking mouth!)</a>
+
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/assholeList.md">混蛋特点清单</a>
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/gaoxiaosong.md">高晓松：在北欧，我觉得自己内心很丑陋</a>
