@@ -1,4 +1,13 @@
-<a href="./music.md">见识</a>
+小狗钱钱
+https://book.douban.com/subject/3576486/
+
+黄金时代
+https://book.douban.com/subject/1082406/
+
+<a href="./bookThink/duanSheLi.md">断舍离</a>
+https://book.douban.com/subject/30415402/
+
+见识
 https://book.douban.com/subject/27167992/
 
 箭术与禅心
