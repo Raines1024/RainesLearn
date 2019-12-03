@@ -27,7 +27,7 @@ public class InitFilter implements Filter {
 		HttpServletRequest req = (HttpServletRequest)request;
 		if("user" == null) {
 			log.debug("用户未登录!!!!!!");
-			chain.doFilter(req, response);
+			chain.doFilter(req, response);//
 			return;
 		}
 
