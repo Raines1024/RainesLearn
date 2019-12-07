@@ -165,3 +165,8 @@
           </ns2:sendOrgDataResponse>
        </soap:Body>
     </soap:Envelope>
+    
+六、SoapUI使用
+
+soapui中文操作手册
+https://www.cnblogs.com/zerotest/p/4668203.html
