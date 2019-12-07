@@ -5,6 +5,10 @@
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/javaUsuallyMethod.md">java常用方法</a>
 
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/springbootXml.md">SpringBoot中接口接收xml参数</a>
+
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/springbootWebServices.md">SpringBoot中使用WebServices</a>
+
 #### Git
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/git/gitBranch.md">Git分支</a>
 
