@@ -24,7 +24,7 @@
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/gaoxiaosong.md">高晓松：在北欧，我觉得自己内心很丑陋</a>
 
 ### 消愁
-<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/books.md">天啊噜阅读计划</a>
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/booksPlan.md">天啊噜阅读计划</a>
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/books.md">图书</a>
 
