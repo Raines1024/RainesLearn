@@ -11,6 +11,8 @@
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/springbootRedis.md">SpringBoot中使用Redis</a>
 
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/mavenJar.md">maven手动导入jar包</a>
+
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/mavenJar.md">maven中引入本地jar包</a>
 
 #### Git
