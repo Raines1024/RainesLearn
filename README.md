@@ -15,6 +15,8 @@
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/mavenJar.md">maven中引入本地jar包</a>
 
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/macZookeeper.md">Mac安装并运行Zookeeper</a>
+
 #### Git
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/git/gitBranch.md">Git分支</a>
 
