@@ -17,6 +17,8 @@
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/macZookeeper.md">Mac安装并运行Zookeeper</a>
 
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/timeComplex.md">算法的时间复杂度</a>
+
 #### Git
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/git/gitBranch.md">Git分支</a>
 
@@ -25,14 +27,14 @@
 ### 随想
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/growUp.md">我把它叫做感悟</a>
 
-<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/IdealLife.md">理想生活</a>
-
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/assholeList.md">混蛋特点清单</a>
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/gaoxiaosong.md">高晓松：在北欧，我觉得自己内心很丑陋</a>
 
 ### 消愁
-<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/booksPlan.md">天啊噜12月阅读计划</a>
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2019/booksPlan12.md">12月阅读计划</a>
+
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2020/booksPlan1.md">天啊噜1月阅读计划</a>
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/books.md">图书</a>
 
