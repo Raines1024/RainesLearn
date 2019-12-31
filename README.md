@@ -27,14 +27,18 @@
 ### 随想
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/growUp.md">我把它叫做感悟</a>
 
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/growUp/growUp.md">观点</a>
+
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/assholeList.md">混蛋特点清单</a>
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/gaoxiaosong.md">高晓松：在北欧，我觉得自己内心很丑陋</a>
 
 ### 消愁
-<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2019/booksPlan12.md">12月阅读计划</a>
-
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2020/booksPlan1.md">天啊噜1月阅读计划</a>
+
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2019/all.md">2019年终总结</a>
+
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2019/booksPlan12.md">12月阅读计划</a>
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/books.md">图书</a>
 
