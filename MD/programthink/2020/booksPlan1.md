@@ -26,9 +26,11 @@
 
 《史记》：史家之绝唱，无韵之离骚。
 
+《有限与无限的游戏》
 
+### 《有限与无限的游戏》：https://book.douban.com/subject/25742296/
 
-
+### 《决断力》：https://book.douban.com/subject/25744065/
 
 
 

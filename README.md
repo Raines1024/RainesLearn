@@ -34,12 +34,6 @@
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/gaoxiaosong.md">高晓松：在北欧，我觉得自己内心很丑陋</a>
 
 ### 消愁
-<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2020/booksPlan1.md">天啊噜1月阅读计划</a>
-
-<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2019/all.md">2019年终总结</a>
-
-<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2019/booksPlan12.md">12月阅读计划</a>
-
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/books.md">图书</a>
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/programBooks.md">编程书籍</a>
@@ -49,6 +43,17 @@
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/music.md">音乐</a>
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/movies.md">电影</a>
+
+### plan
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2020/booksPlan1.md">天啊噜1月阅读计划</a>
+
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2020/plan.md">2020年初计划</a>
+
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2019/all.md">2019年终总结</a>
+
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/2019/booksPlan12.md">12月阅读计划</a>
+
+
 
 
 >Email: 1150079039@qq.com
