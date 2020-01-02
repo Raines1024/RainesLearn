@@ -31,6 +31,29 @@ public class Stack<T> {
         data = new Object[size];
     }
 
+    /**
+     * 是否为空
+     * @return
+     */
+    public boolean isEmpty(){
+        return top == -1;
+    }
+
+    /**
+     * 查看栈顶元素
+     * @return
+     */
+    public T peek(){
+        if (top == -1){
+            throw new RuntimeException("空栈");
+        }
+        return (T) data[top];
+    }
+
+    /**
+     * 入栈
+     * @param o
+     */
     public void push(T o){
         if (top == size-1){
             throw new  RuntimeException("大于容量");
@@ -38,6 +61,10 @@ public class Stack<T> {
         data[++top] = o;
     }
 
+    /**
+     * 弹出栈顶元素
+     * @return
+     */
     public T pop(){
         if (top == -1){
             throw new RuntimeException("空栈");
@@ -45,6 +72,10 @@ public class Stack<T> {
         return (T) data[top--];
     }
 
+    /**
+     * 查看栈容量
+     * @return
+     */
     public int length(){
         return top+1;
     }

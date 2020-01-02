@@ -3,7 +3,7 @@ package com.raines.raineslearn.leetcode;
 public class test {
 
     public static void main(String[] args) {
-
+        System.out.println(fanbei(12));
     }
 
     /**
