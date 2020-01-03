@@ -31,7 +31,11 @@
 
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/assholeList.md">混蛋特点清单</a>
 
-<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/gaoxiaosong.md">高晓松：在北欧，我觉得自己内心很丑陋</a>
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/essay/gaoxiaosong.md">高晓松：在北欧，我觉得自己内心很丑陋</a>
+
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/essay/sad1.md">我的心曾悲伤七次</a>
+
+<a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/essay/idle.md">闲散颂</a>
 
 ### 消愁
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/programthink/books.md">图书</a>

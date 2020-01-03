@@ -1,20 +1,14 @@
-package com.raines.raineslearn.dataStructure;
+package com.raines.raineslearn.dataStructure.queue;
+
+import com.raines.raineslearn.dataStructure.stack.Stack;
 
 /**
- * 栈的顺序为后进先出，而队列的顺序为先进先出。使用两个栈实现队列，一个元素需要经过两个栈才能出队列，在经过第一个栈时元素顺序被反转，经过第二个栈时再次被反转，此时就是先进先出顺序。
+ * 队列
+ *
+ * 栈的顺序为后进先出，而队列的顺序为先进先出。
+ * 使用两个栈实现队列，一个元素需要经过两个栈才能出队列，在经过第一个栈时元素顺序被反转，经过第二个栈时再次被反转，此时就是先进先出顺序。
  */
-public class Queue {
-
-    public static void main(String[] args) {
-        Queue queue = new Queue();
-        queue.push(1);
-        queue.push(2);
-        queue.push(3);
-        System.out.println(queue.pop());
-        System.out.println(queue.pop());
-        System.out.println(queue.peek());
-        System.out.println(queue.pop());
-    }
+public class QueueByStack {
 
     private Stack<Integer> in = new Stack<>();
     private Stack<Integer> out = new Stack<>();
@@ -59,6 +53,17 @@ public class Queue {
      */
     public boolean empty() {
         return in.isEmpty() && out.isEmpty();
+    }
+
+    public static void main(String[] args) {
+        QueueByStack queue = new QueueByStack();
+        queue.push(1);
+        queue.push(2);
+        queue.push(3);
+        System.out.println(queue.pop());
+        System.out.println(queue.pop());
+        System.out.println(queue.peek());
+        System.out.println(queue.pop());
     }
 
 }

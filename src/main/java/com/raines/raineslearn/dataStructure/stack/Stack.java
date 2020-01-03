@@ -1,5 +1,9 @@
-package com.raines.raineslearn.dataStructure;
+package com.raines.raineslearn.dataStructure.stack;
 
+/**
+ * 栈
+ * @param <T>
+ */
 public class Stack<T> {
 
     private Object[] data = null;
