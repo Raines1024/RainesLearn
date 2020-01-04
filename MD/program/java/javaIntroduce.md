@@ -5,5 +5,12 @@
     assertDemo:使用assert断言demo
     io:nio和aio使用demo
     dataStructure:java实现常用数据结构
+        queue: 队列
+        stack: 栈
     proxy:静态代理和动态代理demo
     leetcode:个人力扣刷题过程及结果
+    algorithmThinking:算法思想
+        doublePointer: 双指针
+    redis:redis使用
+    concurrentTest:并发测试
+    threadpool:全局线程池

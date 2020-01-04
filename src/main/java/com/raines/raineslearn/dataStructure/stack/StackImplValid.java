@@ -3,11 +3,11 @@ package com.raines.raineslearn.dataStructure.stack;
 /**
  * 用栈实现括号匹配
  *
- *
+ * 如果是左边的括号，入栈；如果不是，则弹出栈顶元素并比对是否匹配
  */
 public class StackImplValid {
 
-    public boolean isValid(String s) {
+    public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         for (char c : s.toCharArray()) {
             if (c == '(' || c == '{' || c == '[') {
