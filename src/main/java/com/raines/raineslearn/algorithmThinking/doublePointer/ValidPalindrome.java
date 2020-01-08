@@ -18,24 +18,15 @@ public class ValidPalindrome {
     public static void main(String[] args) {
     }
 
-    public static boolean validPalindrome(String s) {
+    public boolean validPalindrome(String s) {
         for (int i = 0, j = s.length() - 1; i < j; i++, j--) {
-            if (s.charAt(i) != s.charAt(j)){
-                return false;
+            if (s.charAt(i) != s.charAt(j)) {
+                return isPalindrome(s, i, j - 1) || isPalindrome(s, i + 1, j);
             }
         }
         return true;
     }
 
-//    public boolean validPalindrome(String s) {
-//        for (int i = 0, j = s.length() - 1; i < j; i++, j--) {
-//            if (s.charAt(i) != s.charAt(j)) {
-//                return isPalindrome(s, i, j - 1) || isPalindrome(s, i + 1, j);
-//            }
-//        }
-//        return true;
-//    }
-//
     private boolean isPalindrome(String s, int i, int j) {
         while (i < j) {
             if (s.charAt(i++) != s.charAt(j--)) {
