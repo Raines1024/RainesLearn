@@ -1,4 +1,7 @@
 ## 一个基本懂得幼稚园道理的小学生
+
+## [前往博客一探究竟](https://eduk12.xyz/) --> https://eduk12.xyz/
+
 ### 编程
 #### Java
 <a href="https://github.com/Xiaolong00/RainesLearn/blob/master/MD/program/java/javaIntroduce.md">包介绍</a>

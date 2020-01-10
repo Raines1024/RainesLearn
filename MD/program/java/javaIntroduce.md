@@ -14,3 +14,15 @@
     redis:redis使用
     concurrentTest:并发测试
     threadpool:全局线程池
+    javaBase:java基础复习
+        dataType:数据类型
+        operation:运算
+        keyword:关键字
+        string:字符串
+        object:Object通用方法
+        extend:继承
+        reflect:反射
+        exception:异常
+        泛型
+        注解
+        新特性

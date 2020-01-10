@@ -3,7 +3,10 @@ package com.raines.raineslearn.leetcode;
 public class test {
 
     public static void main(String[] args) {
-        System.out.println(fanbei(12));
+        double m = 300;
+        double r = 12;
+        int y = 1;
+        System.out.println(sumTime(m,r,y));
     }
 
     /**
