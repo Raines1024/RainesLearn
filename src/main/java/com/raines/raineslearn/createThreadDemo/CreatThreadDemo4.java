@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 
 /**
- * 创建带返回值的线程
+ * 实现 Callable 接口，创建带返回值的线程，返回值通过 FutureTask 进行封装。
  */
 public class CreatThreadDemo4 implements Callable {
     public static void main(String[] args) throws Exception {
