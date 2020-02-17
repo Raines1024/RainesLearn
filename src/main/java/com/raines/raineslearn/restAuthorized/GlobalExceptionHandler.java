@@ -1,23 +1,27 @@
-//package com.raines.raineslearn.restAuthorized;
-//
-//import org.springframework.http.HttpStatus;
-//import org.springframework.web.bind.annotation.ControllerAdvice;
-//import org.springframework.web.bind.annotation.ExceptionHandler;
-//import org.springframework.web.bind.annotation.ResponseBody;
-//
-//import javax.servlet.http.HttpServletRequest;
-//
-///**
-// * 全局统一异常处理增强
-// **/
-//@ControllerAdvice
-//public class GlobalExceptionHandler {
-//
-//    /**
-//     * API统一异常处理
-//     **/
-//    @ExceptionHandler(value = Exception.class)
-//    @ResponseBody
+package com.raines.raineslearn.restAuthorized;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServletRequest;
+
+/**
+ * 全局统一异常处理增强
+ **/
+@ControllerAdvice
+public class GlobalExceptionHandler {
+
+    /**
+     * API统一异常处理
+     **/
+    @ExceptionHandler(value = Exception.class)
+    @ResponseBody
+    public boolean jsonApiErrorHandler(HttpServletRequest request, Exception e) {
+        System.out.println("API统一异常处理");
+        e.printStackTrace();
+        return false;
 //    public ErrorInfo<Exception> jsonApiErrorHandler(HttpServletRequest request, Exception e) {
 //        ErrorInfo<Exception> errorInfo = new ErrorInfo<>();
 //        try {
@@ -55,6 +59,6 @@
 //        }
 //
 //        return errorInfo;
-//    }
-//
-//}
+    }
+
+}

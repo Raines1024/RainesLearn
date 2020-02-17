@@ -11,9 +11,11 @@
     leetcode:个人力扣刷题过程及结果
     algorithmThinking:算法思想
         doublePointer: 双指针
-    redis:redis使用
+    redis: redis使用
+        nx: 分布式锁案例实现
     concurrentTest:并发测试
     threadpool:全局线程池
+    restAuthorized: 全局统一异常处理
     javaBase:java基础复习
         dataType:数据类型
         operation:运算
@@ -26,3 +28,5 @@
         泛型
         注解
         新特性
+    grokkingAlgorithms：算法图解
+    

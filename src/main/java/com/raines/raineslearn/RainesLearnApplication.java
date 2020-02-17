@@ -17,10 +17,10 @@ public class RainesLearnApplication {
     @Autowired
     private static ThreadPoolExecutor rejectThreadPool;
 
-    @Bean
-    public Filter initFilter() {
-        return new InitFilter();
-    }
+//    @Bean
+//    public Filter initFilter() {
+//        return new InitFilter();
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(RainesLearnApplication.class, args);
