@@ -5,11 +5,17 @@ import java.util.*;
 public class BreadthFirstSearch {
     private static Map<String, List<String>> graph = new HashMap<>();
 
+    /**
+     * 检查完一个人后，应将其标记为已检查，且不再检查他。
+     * 如果不这样做，就可能会导致无限循环。
+     * @param name
+     * @return
+     */
     private static boolean search(String name) {
         Queue<String> searchQueue = new ArrayDeque<>(graph.get(name));
         // This list is how you keep track of which people you've searched before.
         List<String> searched = new ArrayList<>();
-
+        // 只要搜索队列不是空的，就弹出一个元素
         while (!searchQueue.isEmpty()) {
             String person = searchQueue.poll();
             // Only search this person if you haven't already searched them
@@ -18,6 +24,7 @@ public class BreadthFirstSearch {
                     System.out.println(person + " is a mango seller!");
                     return true;
                 } else {
+                    //不是芒果经销商，将这个人的朋友都加入搜索队列
                     searchQueue.addAll(graph.get(person));
                     // Marks this person as searched
                     searched.add(person);
