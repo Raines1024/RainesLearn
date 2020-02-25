@@ -13,6 +13,8 @@
         doublePointer: 双指针
     redis: redis使用
         nx: 分布式锁案例实现
+        idempotent: 幂等性接口redis实现
+            cache: redis常用方法封装
     concurrentTest:并发测试
     threadpool:全局线程池
     restAuthorized: 全局统一异常处理

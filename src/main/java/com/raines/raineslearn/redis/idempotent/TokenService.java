@@ -2,6 +2,9 @@ package com.raines.raineslearn.redis.idempotent;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * 幂等接口所需功能
+ */
 public interface TokenService {
 
     /**

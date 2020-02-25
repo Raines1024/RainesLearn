@@ -13,6 +13,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.reflect.Method;
 
+/**
+ * 幂等接口拦截器
+ */
 @Component
 public class AutoIdempotentInterceptor implements HandlerInterceptor {
 

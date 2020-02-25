@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpServletRequest;
 import java.util.UUID;
 
+/**
+ * 幂等接口功能实现类
+ */
 @Service
 public class TokenServiceImpl implements TokenService {
 

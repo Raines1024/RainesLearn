@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
+/**
+ * 幂等接口测试Controller
+ */
 @RestController
 public class BusinessController {
 
