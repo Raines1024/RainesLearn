@@ -7,6 +7,7 @@
     dataStructure:java实现常用数据结构
         queue: 队列
         stack: 栈
+    effective: 高效java第三版
     proxy:静态代理和动态代理demo
     leetcode:个人力扣刷题过程及结果
     algorithmThinking:算法思想
@@ -31,4 +32,7 @@
         注解
         新特性
     grokkingAlgorithms：算法图解
-    
+    interesting: 
+        generics: 泛型
+        serializable: 序列化
+        javaCallJS： java调用js代码
