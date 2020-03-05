@@ -16,42 +16,43 @@ import java.util.concurrent.ThreadPoolExecutor;
 @RestController
 public class Test {
 
-//    @Resource
-//    private ThreadPoolExecutor rejectThreadPool;
+    @Resource
+    private ThreadPoolExecutor rejectThreadPool;
 
     @Authorized
     @RequestMapping("/threadDemo")
     public void demo() throws Exception {
-//        for (int i = 0;i < 50 ;i++){
-//            rejectThreadPool.execute(new ReceiveStrTask(i+""));
-//        }
-//        System.out.println(rejectThreadPool.getPoolSize());
+        for (int i = 0;i < 50 ;i++){
+            rejectThreadPool.execute(new ReceiveStrTask(i+""));
+        }
+        System.out.println(rejectThreadPool.getPoolSize());
+        System.out.println("=====sdfsdfsd");
     }
 
-//    class ReceiveStrTask implements RejectedRunnable {
-//
-//        private String string;
-//
-//        public ReceiveStrTask(String string) {
-//            this.string = string;
-//        }
-//
-//        @Override
-//        public void rejected() {
-//            log.error("任务队列已满，更新任务无法执行，字符串：{}", string);
-//        }
-//
-//        @Override
-//        public void run() {
-//            try {
-//                Thread.sleep(1000l);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//            System.out.println("okok-------------"+ string);
-//        }
-//
-//    }
+    class ReceiveStrTask implements RejectedRunnable {
+
+        private String string;
+
+        public ReceiveStrTask(String string) {
+            this.string = string;
+        }
+
+        @Override
+        public void rejected() {
+            log.error("任务队列已满，更新任务无法执行，字符串：{}", string);
+        }
+
+        @Override
+        public void run() {
+            try {
+                Thread.sleep(100000l);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("okok-------------"+ string);
+        }
+
+    }
 
 }
 
