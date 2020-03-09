@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--日志级别以及优先级排序: OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL --> <!-- status log4j2内部日志级别 -->
+<configuration status="INFO">
+    <!-- 全局参数 -->
+    <Properties>
+        <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p %c{1}:%L -%m%n</Property>
+        <Property name="displayName">oms-system</Property>
+    </Properties>
+
+    <CustomLevels>
+        <!--注意 ： intLevel 值越小，级别越高 （log4j2 官方文档）-->
+        <CustomLevel name="REQUEST" intLevel="10"/>
+        <CustomLevel name="REQUEST_ERROR" intLevel="10"/>
+    </CustomLevels>
+
+    <!-- appenders里设置日志的输出方式、级别和格式 -->
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout>
+                <pattern>${pattern}</pattern>
+            </PatternLayout>
+        </Console>
+        <!-- 文件 每次运行程序会自动清空，由append属性决定 -->
+        <RollingFile name="error" fileName="${displayName}_error.log" append="true"
+                     filePattern="${displayName}_error_%d{yyyy-MM-dd}-%i.log">
+            <!-- 指定error 级别的日志 -->
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT"
+                             onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>${pattern}</pattern>
+            </PatternLayout>
+            <!-- 按大小划分 -->
+            <SizeBasedTriggeringPolicy size="30 MB"/>
+        </RollingFile>
+
+        <RollingFile name="record" fileName="httpLog/${date:yyyy-MM-dd}/${displayName}_record.log" append="true"
+                     filePattern="httpLog/${date:yyyy-MM-dd}/${displayName}_record-%i.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/>
+            <ThresholdFilter level="REQUEST"/>
+            <!-- 按大小划分 -->
+            <SizeBasedTriggeringPolicy size="30 MB"/>
+        </RollingFile>
+
+        <RollingFile name="httpError" fileName="httpErrorLog/${date:yyyy-MM-dd}/${displayName}_error.log" append="true"
+                     filePattern="httpErrorLog/${date:yyyy-MM-dd}/${displayName}_error-%i.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/>
+            <ThresholdFilter level="REQUEST_ERROR"/>
+            <!-- 按大小划分 -->
+            <SizeBasedTriggeringPolicy size="30 MB"/>
+        </RollingFile>
+
+
+        <!-- 滚动文件 -->
+        <RollingFile name="rollingFile" fileName="${displayName}.log"
+                     filePattern="${displayName}_%d{yyyy-MM-dd HH:mm:ss}.log">
+            <!-- 指定error 级别的日志 -->
+            <ThresholdFilter level="INFO" onMatch="ACCEPT"
+                             onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>${pattern}</pattern>
+            </PatternLayout>
+            <!-- 按大小划分 -->
+            <SizeBasedTriggeringPolicy size="30 MB"/>
+        </RollingFile>
+
+
+    </Appenders>
+
+    <!-- loggers里设置全局的级别和绑定appenders里的name -->
+    <Loggers>
+        <Logger name="org.springframework" level="WARN"/>
+        <Logger name="com.yituo.oms" level="DEBUG"/>
+        <Logger name="com.yituo.oms.base.mq.LogReceive" level="REQUEST" additivity="false">
+            <appender-ref ref="record"/>
+        </Logger>
+        <Logger name="com.yituo.oms.base.mq.HttpErrorReceive" level="REQUEST_ERROR" additivity="false">
+            <appender-ref ref="httpError"/>
+        </Logger>
+        <Root level="DEBUG">
+            <AppenderRef ref="console"></AppenderRef>
+            <AppenderRef ref="error"></AppenderRef>
+            <AppenderRef ref="rollingFile"></AppenderRef>
+            <AppenderRef ref="rollingLogFile"></AppenderRef>
+            <AppenderRef ref="rollingErrorFile"></AppenderRef>
+        </Root>
+    </Loggers>
+</configuration>

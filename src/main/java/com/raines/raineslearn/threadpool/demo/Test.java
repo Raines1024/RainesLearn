@@ -1,21 +1,13 @@
 package com.raines.raineslearn.threadpool.demo;
 
-import com.raines.raineslearn.demo.SaveEveryDayMileage;
-import com.raines.raineslearn.restAuthorized.Authorized;
 import com.raines.raineslearn.threadpool.RejectedRunnable;
-import com.sun.corba.se.impl.orbutil.concurrent.Sync;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 @Slf4j
 @RestController
