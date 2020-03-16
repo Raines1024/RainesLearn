@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>template test</title>
+</head>
+<body>
+<div id="container"></div>
+</body>
+<script id="tmpl" type="text/html">
+    <style>
+        .t99 th, .t99 td { width: 30px; height: 30px; text-align: center;}
+    </style>
+    <table class="t99">
+        <tr>
+            <th></th>
+            {% for (var i = 1; i <= params.max; i++) { %}
+            <th>{% echo (i) %}</th>
+            {% } %}
+        </tr>
+        {% for (var i = 1; i <= params.max; i++) { %}
+        <tr>
+            <th>{% echo (i) %}</th>
+            {% for (var j = 1; j <= params.max; j++) { %}
+            <td>{% echo (i * j) %}</td>
+            {% } %}
+        </tr>
+        {% } %}
+    </table>
+</script>
+<script src="template.js"></script>
+<script>
+    var jtmpl = new JTemplateEngine();
+    var tmpl1 = jtmpl.compile(document.getElementById('tmpl').innerHTML);
+    document.getElementById('container').innerHTML = tmpl1({max: 9});
+</script>
+</html>

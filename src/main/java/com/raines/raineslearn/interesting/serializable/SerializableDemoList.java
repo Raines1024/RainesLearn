@@ -17,7 +17,7 @@ public class SerializableDemoList {
         //Write list to File
         ObjectOutputStream oos = null;
         try {
-            oos = new ObjectOutputStream(new FileOutputStream("tempFile"));
+            oos = new ObjectOutputStream(new FileOutputStream("tempFile.txt"));
             oos.writeObject(list);
         } catch (IOException e) {
             e.printStackTrace();
@@ -30,7 +30,7 @@ public class SerializableDemoList {
         }
 
         //Read list from File
-        File file = new File("tempFile");
+        File file = new File("tempFile.txt");
         ObjectInputStream ois = null;
         try {
             ois = new ObjectInputStream(new FileInputStream(file));
@@ -43,7 +43,7 @@ public class SerializableDemoList {
         } finally {
             try {
                 ois.close();
-                file.delete();
+//                file.delete();
             } catch (IOException e) {
                 e.printStackTrace();
             }

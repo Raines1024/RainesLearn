@@ -21,6 +21,15 @@
 
     <dependencies>
 
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.1.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
         <!-- 使用log4j2管理日志 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

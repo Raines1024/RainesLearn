@@ -30,10 +30,10 @@ public class PrintSetMethod {
         resultList.forEach(x -> {
             if (!x.trim().equals("")) {
                 String str = x.trim().substring(0, 1).toUpperCase() + x.substring(1);
-//                String get = "erpBaseCustomer.get" + str+"()";
-//                System.out.println("if("+get+"!=null){");
-                System.out.println("tFenceWarn.set" + str + "(" + ");");
-//                System.out.println("}");
+                String get = "importParam.get" + str+"()";
+                System.out.println("if("+get+"!=null && !("+get+".equals(\"\")"+")){");
+                System.out.println("config.set"+str+"(importParam.get" + str + "(" + "));");
+                System.out.println("}");
             }
         });
     }
