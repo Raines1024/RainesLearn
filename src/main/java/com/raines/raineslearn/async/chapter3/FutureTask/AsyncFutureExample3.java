@@ -3,8 +3,7 @@ package com.raines.raineslearn.async.chapter3.FutureTask;
 import java.util.concurrent.*;
 
 /**
- * Hello world!
- *
+ * 使用线程池submit执行FutureTask并获取执行结果
  */
 public class AsyncFutureExample3 {
 
@@ -42,6 +41,7 @@ public class AsyncFutureExample3 {
 		long start = System.currentTimeMillis();
 
 		// 1.开启异步单元执行任务A
+		//调用了线程池的submit方法提交了一个任务到线程池，然后返回了一个futureTask对象
 		Future<String> futureTask = POOL_EXECUTOR.submit(() -> {
 			String result = null;
 			try {

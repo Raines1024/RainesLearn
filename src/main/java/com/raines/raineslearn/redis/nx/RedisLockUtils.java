@@ -8,7 +8,7 @@ import redis.clients.jedis.JedisPoolConfig;
 public class RedisLockUtils {
 
     // Jedispool
-    JedisCommands jedisCommands;
+//    JedisCommands jedisCommands;
     JedisPool jedisPool;
     JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
     String ip = "172.16.100.4";
@@ -34,6 +34,11 @@ public class RedisLockUtils {
      * 这里注意点在于jedis的set方法，其参数的说明如：
      * NX：是否存在key，存在就不set成功
      * PX：key过期时间单位设置为毫秒（EX：单位秒）
+     * <p>
+     * EX seconds ： 将键的过期时间设置为 seconds 秒。 执行 SET key value EX seconds 的效果等同于执行 SETEX key seconds value 。
+     * PX milliseconds ： 将键的过期时间设置为 milliseconds 毫秒。 执行 SET key value PX milliseconds 的效果等同于执行 PSETEX key milliseconds value 。
+     * NX ： 只在键不存在时， 才对键进行设置操作。 执行 SET key value NX 的效果等同于执行 SETNX key value 。
+     * XX ： 只在键已经存在时， 才对键进行设置操作。
      * @param key
      * @param val
      * @return

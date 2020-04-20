@@ -1,5 +1,6 @@
 package com.raines.raineslearn.async.chapter3.CompletableFuture;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -8,6 +9,10 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
+/**
+ * 1.基于allOf等待多个并发运行的CompletableFuture任务执行完毕
+ * 2.基于anyOf等多个并发运行的CompletableFuture任务中有一个执行完毕就返回
+ */
 public class TestMoreCompletableFuture {
 
 	// 1.异步任务，返回future
@@ -26,7 +31,7 @@ public class TestMoreCompletableFuture {
 				}
 				System.out.println("compute " + id);
 
-				return id;
+				return id+"after";
 			}
 		});
 	}
@@ -52,6 +57,9 @@ public class TestMoreCompletableFuture {
 		});
 	}
 
+	/**
+	 * 基于allOf等待多个并发运行的CompletableFuture任务执行完毕
+	 */
 	public static void allOf() throws InterruptedException, ExecutionException {
 		// 1.创建future列表
 		List<CompletableFuture<String>> futureList = new ArrayList<>();
@@ -82,6 +90,9 @@ public class TestMoreCompletableFuture {
 		}
 	}
 
+	/**
+	 * 基于anyOf等多个并发运行的CompletableFuture任务中有一个执行完毕就返回
+	 */
 	public static void anyOf() throws InterruptedException, ExecutionException {
 		// 1.创建future列表
 		List<CompletableFuture<String>> futureList = new ArrayList<>();
@@ -103,7 +114,7 @@ public class TestMoreCompletableFuture {
 		allOf();
 
 		// 2.anyOf
-		// anyOf();
+//		 anyOf();
 
 		Thread.sleep(10000);
 	}

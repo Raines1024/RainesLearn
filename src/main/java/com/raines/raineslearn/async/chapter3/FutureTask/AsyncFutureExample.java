@@ -3,6 +3,9 @@ package com.raines.raineslearn.async.chapter3.FutureTask;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
+/**
+ * 使用线程执行FutureTask并获取执行结果
+ */
 public class AsyncFutureExample {
 
 	public static String doSomethingA() {

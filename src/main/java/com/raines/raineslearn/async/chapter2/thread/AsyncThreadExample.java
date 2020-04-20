@@ -1,5 +1,9 @@
 package com.raines.raineslearn.async.chapter2.thread;
 
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
 /**
  * Java中有两种方式来显式开启一个线程进行异步处理。
  * 第一种方式是实现java.lang.Runnable接口的run方法，然后传递Runnable接口的实现类作为创建Thread时的参数，启动线程。
@@ -7,10 +11,25 @@ package com.raines.raineslearn.async.chapter2.thread;
  */
 public class AsyncThreadExample {
 
+	// 0自定义线程池
+	private final static int AVALIABLE_PROCESSORS = Runtime.getRuntime().availableProcessors();
+	private final static ThreadPoolExecutor POOL_EXECUTOR = new ThreadPoolExecutor(1,
+			16, 1, TimeUnit.MINUTES, new LinkedBlockingQueue<>(5),
+			new ThreadPoolExecutor.CallerRunsPolicy());
+
+	public static int i = 0;
+
 	public static void doSomethingA() {
 
 		try {
-			Thread.sleep(2000);
+			i = 3;
+			System.out.println("A-Start");
+			boolean a = true;
+			while (a){
+
+			}
+			Thread.sleep(60000);
+			i = 6;
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -19,13 +38,14 @@ public class AsyncThreadExample {
 
 	public static void doSomethingB() {
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		System.out.println("--- doSomethingB---");
 
 	}
+
 
 	/**
 	 * 准备：
@@ -41,24 +61,54 @@ public class AsyncThreadExample {
 	 * @throws InterruptedException
 	 */
 	public static void main(String[] args) throws InterruptedException {
-
 		long start = System.currentTimeMillis();
+		boolean a = true;
 
-		// 1.开启异步单元执行任务A
-		Thread thread = new Thread(() -> {
-			try {
-				doSomethingA();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}, "threadA");
-		thread.start();
+//		// 1.开启异步单元执行任务A
+//		Thread thread = new Thread(() -> {
+//			try {
+//				doSomethingA();
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//		}, "threadA");
+////		thread.setDaemon(true);
+//		thread.start();
+//		Thread thread2 = new Thread(() -> {
+//			try {
+//				doSomethingA();
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//		}, "threadB");
+//		thread2.start();
 
-		// 2.执行任务B
-		doSomethingB();
+		for (int j = 0; j < 20; j++) {
+			Thread demo = new Thread(() -> {
+				try {
+					doSomethingA();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}, "thread"+j+"Pool");
+			POOL_EXECUTOR.submit(demo);
+		}
+
+
+		while (a){
+
+		}
+//
+//		// 2.执行任务B
+//		doSomethingB();
 
 		// 3.同步等待线程A运行结束
-		thread.join();
+//		thread.join();
+
+//		thread.wait();
+//		thread.notify();
 		System.out.println(System.currentTimeMillis() - start);
+		System.out.println(Thread.currentThread().getName());
+		System.out.println(Thread.interrupted());
 	}
 }

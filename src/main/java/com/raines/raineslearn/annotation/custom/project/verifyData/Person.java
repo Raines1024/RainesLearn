@@ -1,6 +1,13 @@
 package com.raines.raineslearn.annotation.custom.project.verifyData;
 
-public class Person {
+import lombok.Data;
+import lombok.ToString;
+
+import java.io.Serializable;
+
+@ToString
+@Data
+public class Person implements Serializable {
     @NotEmpty
     private Integer id;
     @NotEmpty

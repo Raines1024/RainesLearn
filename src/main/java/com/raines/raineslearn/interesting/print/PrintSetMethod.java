@@ -17,6 +17,7 @@ public class PrintSetMethod {
         Scanner scanner = new Scanner(System.in);
         StringBuffer stringBuffer = new StringBuffer();
         List<String> resultList = new ArrayList<>();
+        List<String> intList = new ArrayList<>();
         while (scanner.hasNext()) {
             String s = scanner.nextLine();
             stringBuffer.append(s);
@@ -27,14 +28,27 @@ public class PrintSetMethod {
         Arrays.asList(stringBuffer.toString().split("private String ")).forEach(x -> {
             resultList.add(x.split(";")[0]);
         });
+        Arrays.asList(stringBuffer.toString().split("private Integer ")).forEach(x -> {
+            intList.add(x.split(";")[0]);
+        });
         resultList.forEach(x -> {
             if (!x.trim().equals("")) {
                 String str = x.trim().substring(0, 1).toUpperCase() + x.substring(1);
-                String get = "importParam.get" + str+"()";
-                System.out.println("if("+get+"!=null && !("+get+".equals(\"\")"+")){");
-                System.out.println("config.set"+str+"(importParam.get" + str + "(" + "));");
-                System.out.println("}");
+                String strSmall = x.trim().substring(0, 1) + x.substring(1);
+                System.out.print("String "+strSmall+",");
+//                String get = "importParam.get" + str+"()";
+//                System.out.println("if("+get+"!=null && !("+get+".equals(\"\")"+")){");
+//                System.out.println("tFaultMessage.set"+str+"(" + strSmall + ");");
+//                System.out.println("updateFenceConfigParam.set"+str.substring(0, 1).toUpperCase() + str.substring(1)+"("+str+");");
+//                System.out.println("}");
             }
+        });
+        intList.stream().skip(1).forEach(x -> {
+            String str = x.trim().substring(0, 1).toUpperCase() + x.substring(1);
+            String strSmall = x.trim().substring(0, 1) + x.substring(1);
+//            System.out.println("tFaultMessage.set"+str+"(" + strSmall + ");");
+            System.out.print("Integer "+strSmall+",");
+//            System.out.println("updateFenceConfigParam.set"+str.substring(0, 1).toUpperCase() + str.substring(1)+"("+str+");");
         });
     }
 

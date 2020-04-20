@@ -1,5 +1,6 @@
 package com.raines.raineslearn.threadpool;
 
+import com.raines.raineslearn.async.chapter2.threadPool.NamedThreadFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
@@ -26,8 +27,9 @@ public class AllThreadPool {
                 120L,
                 TimeUnit.SECONDS,
                 new ArrayBlockingQueue<>(50000),
-//                new NamedThreadFactory("Etian-Pool"),
-                new RejectedTaskPolicyWithReport("Etian-Pool"));
+                new NamedThreadFactory("ASYNC-Pool"),
+                new RejectedTaskPolicyWithReport("ASYNC-Pool"));
         return executor;
     }
+
 }

@@ -33,7 +33,7 @@ public class TestFutureException2 {
 		}, "thread-1").start();
 
 		// 3.等待计算结果
-		// System.out.println(future.get());
+//		 System.out.println(future.get());
 		System.out.println(future.exceptionally(t -> "default").get());// 默认值
 	}
 }

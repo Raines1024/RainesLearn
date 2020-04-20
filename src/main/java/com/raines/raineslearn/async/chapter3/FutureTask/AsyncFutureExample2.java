@@ -3,8 +3,7 @@ package com.raines.raineslearn.async.chapter3.FutureTask;
 import java.util.concurrent.*;
 
 /**
- * Hello world!
- *
+ * 使用线程池execute执行FutureTask并获取执行结果
  */
 public class AsyncFutureExample2 {
 
@@ -54,6 +53,7 @@ public class AsyncFutureExample2 {
 		});
 
 		// 2.开启异步单元执行任务A
+		//添加异步任务到线程池
 		POOL_EXECUTOR.execute(futureTask);
 
 		// 3.执行任务B
@@ -66,3 +66,12 @@ public class AsyncFutureExample2 {
 		System.out.println(System.currentTimeMillis() - start);
 	}
 }
+
+
+
+
+
+
+
+
+
